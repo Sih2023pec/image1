@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop File upload</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-section">
+            <h1>Upload Files</h1>
+            <p>Upload file you want to share with your team member</p>
+            <p>Only Image are allowed.</p>
+        </div>
+        <div class="drop-section ">
+            <div class="col">
+                <div class="cloud-icon">
+                    <img src="image/up.png" alt="cloud">
+                </div>
+                <span>Drag & Drop your files here</span>
+                <span>OR</span>
+                <button class="file-selector" onclick="return typeValidation()">Browse Files</button>
+                <input type="file" class="file-selector-input" multiple>
+            </div>
+            <div class="col">
+                <div class="drop-here">Drop here</div>
+            </div>
+        </div>
+        <div class="list-section">
+            <div class="list-title">Upload Files</div>
+            <div class="list">
+             <!--   <li class="in-prog">
+                    <div class="col">
+                        <img src="image/word.png" width="50" alt="">
+                    </div>
+                    <div class="col">
+                        <div class="file-name">
+                            <div class="name">File Name Here</div>
+                            <span>50%</span>
+                        </div>
+                        <div class="file-progress">
+                            <span></span>
+                        </div>
+                        <div class="file-size">2.3MB</div>
+                    </div>
+                    <div class="col">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="tick" height="20" width="20"
+                            viewBox="0 0 448 512">
+                            <path
+                                d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="cross" height="20" width="20"
+                            viewBox="0 0 384 512">
+                            <path
+                                d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                        </svg>
+                    </div>
+                </li>-->
+            </div>
+        </div>
+
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>
